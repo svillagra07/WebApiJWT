@@ -175,6 +175,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\CuentaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\TokenGenerator.cs" />
@@ -185,6 +186,8 @@
     </Compile>
     <Compile Include="Models\AppUsuario.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Cuenta.cs" />
+    <Compile Include="Models\CuentaRequest.cs" />
     <Compile Include="Models\LoginRequest.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

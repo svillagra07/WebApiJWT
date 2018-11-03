@@ -59,7 +59,7 @@ namespace WebApiJWT.Controllers
                          ["BANKINGConnection"].ConnectionString))
             {
                 SqlCommand command = new SqlCommand(" SELECT CLI_COD_CLIENTE, " +
-                    "CLI_IDENTIFICACION, CLI_NOMBRE, CLI_EMAIL, CLI_FECHA_NACIMIENTO, " +
+                    "CLI_IDENTIFICACION, CLI_NOMBRE, CLI_EMAIL, CLI_FEC_NAC, " +
                         "CLI_ESTADO, USERNAME "+
                "FROM CLIENTE WHERE CLI_COD_CLIENTE = @CLI_COD_CLIENTE ", connection);
 
