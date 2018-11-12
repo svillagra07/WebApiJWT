@@ -48,8 +48,9 @@ namespace WebApiJWT.Controllers
             }
         }
 
-        [HttpGet]
-        public IHttpActionResult GetId(int id)
+        [HttpPost]
+        [Route("obtener")]
+        public IHttpActionResult ObtenerCliente(Models.ClienteRequest request)
         {
             Models.Cliente cliente = new Models.Cliente();
 
@@ -61,9 +62,9 @@ namespace WebApiJWT.Controllers
                 SqlCommand command = new SqlCommand(" SELECT CLI_COD_CLIENTE, " +
                     "CLI_IDENTIFICACION, CLI_NOMBRE, CLI_EMAIL, CLI_FEC_NAC, " +
                         "CLI_ESTADO, USERNAME "+
-               "FROM CLIENTE WHERE CLI_COD_CLIENTE = @CLI_COD_CLIENTE ", connection);
+               "FROM CLIENTE WHERE USERNAME = @USERNAME ", connection);
 
-                command.Parameters.AddWithValue("@CLI_COD_CLIENTE", id);
+                command.Parameters.AddWithValue("@USERNAME", request.Username);
                 connection.Open();
                 SqlDataReader dr = command.ExecuteReader();
                 while (dr.Read())

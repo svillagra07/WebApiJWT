@@ -186,6 +186,7 @@
     </Compile>
     <Compile Include="Models\AppUsuario.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\ClienteRequest.cs" />
     <Compile Include="Models\Cuenta.cs" />
     <Compile Include="Models\CuentaRequest.cs" />
     <Compile Include="Models\LoginRequest.cs" />

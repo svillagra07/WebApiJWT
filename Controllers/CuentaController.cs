@@ -13,6 +13,7 @@ namespace WebApiJWT.Controllers
     public class CuentaController : ApiController
     {
         [HttpPost]
+        [Route("obtener")]
         public IHttpActionResult ObtenerCuentas(CuentaRequest request)
         {
             List<Cuenta> cuentas = new List<Cuenta>();
