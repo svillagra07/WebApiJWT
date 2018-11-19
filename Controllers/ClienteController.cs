@@ -36,6 +36,8 @@ namespace WebApiJWT.Controllers
                 command.Parameters.AddWithValue("@CLI_ESTADO", cliente.cli_estado);
                 command.Parameters.AddWithValue("@USERNAME", cliente.username);
 
+                connection.Open();
+
                 int filasAfectadas = command.ExecuteNonQuery();
                 if(filasAfectadas > 0)
                 {
